@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<title>CYPRI Skórovací Kalkulačka</title>
+<title>CYPRI Skórovací Kalkulátor</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -72,46 +72,46 @@ button {
 <form id="cypri-form">
 
 <div class="criterion-box">
-<label><input type="checkbox" name="psychiatric_med"> Použití psychiatrických léků (1 bod)</label>
+<label><input type="checkbox" name="psychiatric_med"> Užívání psychofarmak s vysokým rizikem variability metabolismu CYP2D6/CYP2C19 (1 bod)</label>
 <div class="details">
-Psychofarmaka klasifikovaná jako substráty CYP2D6/CYP2C19 dle konsenzuálních doporučení TDM (Hiemke 2018), tabulky Flockhart, PharmGKB, CPIC a DPWG.\n\nPříklady: atomoxetin, modafinil, amitriptylin, nortriptylin, paroxetin, citalopram, escitalopram, fluoxetin, aripiprazol, risperidon, diazepam, venlafaxin.
+Psychofarmaka klasifikovaná jako substráty CYP2D6/CYP2C19 dle Hiemke 2018 Consensus Guidelines for TDM, Flockhartovy tabulky, PharmGKB, CPIC a DPWG.\n\nPříklady: atomoxetin, modafinil, amitriptylin, nortriptylin, paroxetin, citalopram, escitalopram, fluoxetin, aripiprazol, risperidon, diazepam, venlafaxin.
 </div>
 </div>
 
 <div class="criterion-box">
-<label><input type="checkbox" name="somatic_med"> Použití somatické medikace (1 bod)</label>
+<label><input type="checkbox" name="somatic_med"> Užívání somatické medikace s vysokým rizikem variability metabolismu CYP2D6/CYP2C19 (1 bod)</label>
 <div class="details">
-Nepsychiatrické léky, které jsou také substráty CYP2D6 a CYP2C19 dle Flockhart Table, PharmGKB, CPIC a DPWG.\n\nPříklady: klopidogrel, kodein, tramadol, omeprazol, pantoprazol, ondansetron, metoklopramid, vorikonazol, metoprolol, propafenon.
+Somatická léčiva, která jsou také substráty CYP2D6 a CYP2C19 dle Flockhart Table, PharmGKB, CPIC a DPWG.\n\nPříklady: klopidogrel, kodein, tramadol, omeprazol, pantoprazol, ondansetron, metoklopramid, vorikonazol, metoprolol, propafenon.
 </div>
 </div>
 
 <div class="criterion-box">
 <label><input type="checkbox" name="treatment_resistance"> Farmakorezistence (1 bod)</label>
 <div class="details">
-Selhání dvou a více adekvátních pokusů o terapii při ověřené adherenci a dávkování.
+Selhání dvou a více adekvátních pokusů o terapii při ověřené adherenci a při podávání dostatečných dávek po dostatečně dlouhou dobu.
 </div>
 </div>
 
 <fieldset>
 <div class="legend-title">Hladiny léčiv v plazmě (zvolte jednu možnost)</div>
 
-<label><input type="radio" name="tdm" value="3"> Hladiny neodpovídají dávce (3 body)</label>
+<label><input type="radio" name="tdm" value="3"> Výsledná plazmatická hladina neodpovídají dávce (3 body)</label>
 <div class="details">
-Na základě TDM: vysoká dávka a nízká hladina (ultrarapid) nebo nízká dávka a vysoká hladina (poor metabolizer).
+Na základě výsledku TDM: vysoká dávka a nízká hladina (suspekce na fenotyp UM/RM) nebo nízká dávka a vysoká hladina (suspekce na PM/IM).
 </div>
 
-<label><input type="radio" name="tdm" value="1"> Hladina mimo rozmezí min-max (1 bod)</label>
+<label><input type="radio" name="tdm" value="1"> Plazmatická hladina léčiva je v rámci doporučeného rozmezí, ale mimo vypočítaného rozmezí na základě dávky (dose related concentration, DCR) C/Dlow-C/Dmax dle Hiemke (1 bod)</label>
 <div class="details">
-Hladina mimo terapeutické rozmezí (Hiemke 2018) nebo abnormální poměr metabolit/léčivo.
+Abnormální poměr metabolit/léčivo (MR) dle Hiemke 2018.
 </div>
 
 <label><input type="radio" name="tdm" value="0" checked> Žádné</label>
 </fieldset>
 
 <div class="criterion-box">
-<label><input type="checkbox" name="adr"> Klinicky závažné NÚL (3 body)</label>
+<label><input type="checkbox" name="adr"> Klinicky závažné nežádoucí účinky (NÚ) (3 body)</label>
 <div class="details">
-Na základě farmakologické anamnézy a klinického pozorování:\n- nutnost snížení dávky\n- přerušení terapie pro intoleranci\n- hospitalizace v důsledku NÚL\n- intolerance při standardním dávkování\n\nNezahrnujeme alergické a imunologické reakce ani přírůstek hmotnosti.
+Na základě farmakologické anamnézy a klinického pozorování:\n- nutnost snížení dávky\n- přerušení terapie pro špatnou toleranci\n- hospitalizace v důsledku NÚ\n- intolerance při standardním dávkování\n\nNezahrnuje NÚ nezávislé na koncentraci (např. alergické a imunologické reakce ani přírůstek hmotnosti).
 </div>
 </div>
 
