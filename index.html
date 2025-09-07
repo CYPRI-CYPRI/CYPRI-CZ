@@ -154,9 +154,9 @@ function calculateScore() {
 
     let interpretation = "";
     if (score >= 4) {
-        interpretation = "<span style='color: red; font-weight: bold;'>Pacient má vysokou pravděpodobnost přínosu farmakogenetického testování. Testování je doporučeno.</span>";
+        interpretation = "<span style='color: red; font-weight: bold;'>Pacient(ka) má vysokou pravděpodobnost přínosu farmakogenetického testování. Testování je doporučeno.</span>";
     } else if (score <= 3) {
-        interpretation = "<span style='color: red; font-weight: bold;'>Pacient pravděpodobně nebude profitovat z farmakogenetického testování. Rutinní testování není doporučeno.</span>";
+        interpretation = "<span style='color: red; font-weight: bold;'>Pacient(ka) pravděpodobně nebude profitovat z farmakogenetického testování. Rutinní testování není doporučeno.</span>";
     }
 
     document.getElementById("interpretation").innerHTML = interpretation;
