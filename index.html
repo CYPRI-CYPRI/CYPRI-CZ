@@ -165,7 +165,28 @@ ol a {
 ol a:hover {
     text-decoration: underline;
 }
-</style>
+.intro-box {
+    background: #f4f7fb;
+    border-left: 5px solid #2c3e50;
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.intro-box h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+.intro-box p {
+    margin: 0 0 14px 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #222;
+}</style>
 </head>
 <body>
 
@@ -178,7 +199,28 @@ ol a:hover {
   pro výběr pacientů k farmakogenetickému vyšetření
   (genotypizace CYP2C19 a CYP2D6)
 </div>
+<div class="intro-box">
+  <h2>CYPRI – klinický nástroj pro indikaci farmakogenetického testování</h2>
 
+  <p>
+    CYPRI (CYP Pharmacogenetic Risk Index) je nástroj určený pro lékaře a klinické farmaceuty
+    k identifikaci pacientů, u kterých je vysoká pravděpodobnost klinického přínosu
+    farmakogenetického (PGx) vyšetření, zejména pro enzymy CYP2D6 a CYP2C19.
+  </p>
+
+  <p>
+    Vychází z běžně dostupných klinických údajů (např. farmakorezistence, nežádoucí účinky,
+    TDM nebo typ medikace) a pomáhá odhadnout, zda PGx testování povede ke změně léčby
+    nebo dávkování.
+  </p>
+
+  <p>
+    Označte relevantní klinická kritéria podle stavu pacienta a klikněte na
+    <strong>„Spočítat skóre”</strong>.
+    Vyšší skóre znamená vyšší pravděpodobnost klinicky významného dopadu PGx testování.
+    Hodnota ≥4 body indikuje vysokou pravděpodobnost klinického přínosu.
+  </p>
+</div>
 <form id="cypri-form">
 
 <div class="criterion-box">
